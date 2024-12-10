@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom & Sell Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background-image: url("img/Home-Main-Banner-2.jpg");
+
+/* Set a specific height */
+height: 800px;
+
+/* Position and center the image to scale nicely on all screens */
+     background-position: center;
+              background-repeat: no-repeat;
+             background-size: cover;
+position: relative;
+     
+            padding: 50px 0;
+            overflow: hidden;
+        }
+#heading{
+    margin-top: 256px;
+}
+        /* Wave Background */
+        .hero-section::before {
+            content: '';
+            background: url('https://via.placeholder.com/800x500/1E90FF/FFFFFF') no-repeat;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        /* Content Styling */
+        .hero-content h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #fff;
+        }
+        #logo1{
+  width: 200px;
+  margin-top: 20px;
+}
+
+        .hero-content p {
+            color: #f8f9fa;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        /* Buttons */
+        .btn-custom {
+            background-color: #007bff;
+            color: white;
+            border-radius: 30px;
+            padding: 10px 20px;
+        }
+
+        .btn-custom:hover {
+            background-color: #0056b3;
+        }
+
+        .btn-highlight {
+            background-color: #ffc107;
+            color: black;
+            border-radius: 30px;
+            padding: 10px 20px;
+        }
+
+        .btn-highlight:hover {
+            background-color: #e0a800;
+        }
+        .step-number {
+  background-color: black;
+  color: white;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+#color{
+    background-color: #D2ECFF;
+}
+#color2{
+  color: #3e3d3d;
+}
+.card-body p {
+  font-size: 0.9rem;
+}
+.about-section {
+  padding: 50px 20px;
+}
+.about-section h1 {
+  color: #ff0080;
+  font-weight: bold;
+}
+.about-section p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+.about-logo img {
+  max-width: 100%;
+  height: auto;
+}
+.learn-more {
+  color: #000;
+  text-decoration: none;
+  font-size: 30px;
+}
+.learn-more:hover {
+  text-decoration: underline;
+}
+
+
+.kids-wear-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background: #f9f9f9;
+}
+
+.kids-wear-section .content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.left-column {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.left-column img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.right-column {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+}
+
+
+.right-column .subtitle {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.right-column hr {
+  width: 50px;
+  margin: 10px auto;
+  border: 1px solid black;
+}
+
+.right-column h1 {
+  font-size: 36px;
+  margin: 20px 0;
+  line-height: 1.2;
+  color: #333;
+}
+
+.right-column .description {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.right-column img {
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+#heading4{
+  margin-top: 200px;
+}
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+            .hero-content p {
+                font-size: 1rem;
+            }
+        }
+
+        /* Image Styling */
+        .hero-img img {
+            width: 100%;
+            max-width: 400px;
+        }
+
+        @media (max-width: 992px) {
+            .kids-wear-section .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left-column, .right-column {
+    flex: 1 0 100%;
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .right-column img {
+    max-width: 70%;
+  }
+
+  .right-column h1 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 768px) {
+
+.right-column h1 {
+    font-size: 24px;
+  }
+
+  .right-column .description {
+    font-size: 14px;
+  }
+}
+@media (max-width: 576px) {
+.right-column img {
+    max-width: 90%;
+  }
+
+  .right-column h1 {
+    font-size: 20px;
+  }
+
+  .kids-wear-section {
+    padding: 20px;
+  }
+
+  .right-column .subtitle {
+    font-size: 12px;
+  }
+}
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <img src="img/Printlet-logo.png" alt="Logo" class="me-2" id="logo1">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Custom</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Outlet</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">How it Works?</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link position-relative" href="#">
+                          <i class="fa-solid fa-cart-shopping"></i>
+                          <span class="badge bg-primary rounded-circle position-absolute top-0 start-100 translate-middle">0</span>
+                        </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-solid fa-user"></i></a>
+                      </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-center text-md-start">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Text Content -->
+                <div class="col-md-6 hero-content" id="heading">
+                    <h1>Custom & Sell</h1>
+                    <p>Customize your product and ship directly to your customer or to yourself.</p>
+                    <div class="d-flex justify-content-center justify-content-md-start gap-2">
+                        <a href="#" class="btn btn-custom">Customize</a>
+                        <a href="#" class="btn btn-highlight">How it works?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section class="text-center py-5  text-white" id="color">
+          <div class="container">
+            <h1 style="color: black;">Start your own brand in 5 steps</h1>
+            <p class="text-dark" id="color2">0 Cash | 0 Risks</p>
+            <div class="row justify-content-center mt-4">
+              <!-- Step 2 -->
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                <div class="card shadow">
+                  <div class="card-body text-center">
+                    <h2 class="step-number">2</h2>
+                    <h5 class="text-primary">Customize</h5>
+                    <p class="text-muted">
+                      Apply designs to product by uploading designs, add text, shapes, switch within unlimited colors and fonts.
+                  </div>
+                </div>
+              </div>
+              <!-- Step 3 -->
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                <div class="card shadow">
+                  <div class="card-body text-center" >
+                    <h2 class="step-number">3</h2>
+                    <h5 class="text-primary">Save & Proceed</h5>
+                    <p class="text-muted">
+                      Save your product to reuse in future orders or edit design anytime. Then add to cart to continue with the order.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Step 4 -->
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3">
+                <div class="card shadow">
+                  <div class="card-body text-center">
+                    <h2 class="step-number">4</h2>
+                    <h5 class="text-primary">Checkout</h5>
+                    <p class="text-muted">
+                      Send to yourself or directly to your customers, set your own retail price and checkout.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <section class="about-section text-center text-lg-start">
+      <div class="container">
+          <div class="row align-items-center">
+              <!-- Text Section -->
+              <div class="col-lg-8 col-md-12">
+                <span style="color: rgb(251, 0, 184);">About </span>
+                  <h1 style="color: black;">PRINTLET</h1>
+                  <p>Printlet is a Print on Demand platform that helps people turn their ideas into brands.</p>
+                  <p>Whether you wish to create your own brand or customize a product for your company or
+                  <br/> event, we can help you get it done.</p>
+                  <p>Whenever your customer makes a purchase, you submit the order, we fulfill, ship, and <br>collect under your brand name
+                  <br><span>All you need is passion and we’ll give you the tools to make it work.</span>.</p>
+                  <a href="#" class="learn-more">Learn More <span style="color: #007bff;">&rsaquo;</span></a>
+              </div>
+              <!-- Image Section -->
+              <div class="col-lg-4 col-md-12 about-logo text-center mt-4 mt-lg-0">
+                  <img src="img/about.png" alt="Man wearing customized polo shirt">
+              </div>
+          </div>
+      </div>
+  </section>
+
+
+      <section class="kids-wear-section">
+        <div class="content">
+          <div class="left-column">
+            <img src="img/Green-ban.png" alt="Kid in green hoodie">
+          </div>
+          <div class="text-align" id="heading4">
+            <p class="subtitle">More products to come..</p>
+            <hr>
+            <h1><b>START SELLING<br>KIDS WEAR</b></h1>
+            <p class="description">You Sell We Fulfill</p>
+          </div>
+          <div class="right-column">
+            <img src="img/Black-ban.png" alt="Kid in black hoodie">
+          </div>
+        </div>
+      </section>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
